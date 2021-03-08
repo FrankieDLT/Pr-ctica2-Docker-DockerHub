@@ -56,22 +56,16 @@ class OperationsController {
         });
     }
 
-    OperatorsRule(req, res) {
-        result = 0;
-        res.json({
-            respuesta: result
-        });
-    }
 
     Free(req, res) {
         const {
             operation
         }  = req.body;
         result = 0;
-        array1 = operation.split(" ");
+        var array1 = operation.split(" ");
 
         for(var item in array1) {
-            console.log(item);
+            console.log(array1[item]);
         }
 
         res.json({

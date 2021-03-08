@@ -11,7 +11,7 @@ router.post('/suma',operationsController.Sum);
 router.post('/resta',operationsController.Subtraction);
 router.post('/multiplica',operationsController.Multiply);
 router.post('/divide',operationsController.Divide);
-router.post('/free',operationsController.OperatorsRule);
+router.post('/free',operationsController.Free);
 router.get('/autores',infoController.Autores);
 
 module.exports = router;
